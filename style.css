@@ -1,0 +1,3577 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    }
+
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    .main-sup {
+        background-color: #144264;
+        height: 2em;
+        padding: 0rem 6.25em;
+        flex-shrink: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-shrink: 0;    
+        z-index: 2;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        background-color: transparent;
+        top: 5em;
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+
+    .main-menu li a {
+        color: #FFF;
+        text-align: right;
+        font-family: Inter;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+        list-style: none;
+        display: inline-block;
+        padding-bottom: 0.5em;
+        transition: color 0.3s ease;
+        position: relative;
+        margin-left: 1.2em;
+    }
+
+    .main-menu li a:hover {
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .main-menu li a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        border-radius: 1px;
+        background-color: #fff;
+        transform: scaleX(0); /* Inicialmente sin ancho */
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+    }
+
+    .main-menu li a:hover::after {
+        transform: scaleX(1); /* Ancho completo al pasar el mouse sobre él */
+        transform-origin: bottom left;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+
+    .header img {
+        width: 15rem;
+        flex-shrink: 0;
+        z-index: 1;
+    }
+
+    .hero-section {
+        position: relative;
+        height: 100vh;
+        background: url('Assets/main.png') center top /cover no-repeat fixed; 
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+}
+
+    .hero-section .arr-hero a {
+        z-index: 2;
+        font-size: 2em;
+        color: white;
+    }
+
+    .hero-section .t-principal h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Plus Jakarta Sans;
+        font-size: 3.5em;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: -0.1rem;
+        margin-top: 30vh;
+    }
+
+    .hero-section i {
+        border: solid 1px;
+        border-radius: 2em;
+        padding: 0.5em;
+        font-size: 22px;
+    }
+
+    .hero-section i:hover {
+        opacity: 80%;
+    }
+
+    section {
+        background-color: #F9F7F1;
+        margin: 0;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10em;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2em;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .about p {
+        color: rgba(20, 66, 100, 0.90);
+        font-family: Plus Jakarta Sans;
+        font-size: 1.4em;
+        font-weight: 500;
+        line-height: 1.6em; /* 177.374% */
+        letter-spacing: -0.01em;
+        width: 43%;
+        flex-shrink: 0;
+    }
+
+    .sust-border {
+        border-radius: 1em;
+        border: 1px solid var(--grey-60, #D0D1D6);
+        padding: 0.7em;
+        width: 52%;
+    }
+
+    .sust-tec {
+        border-radius: 1em;
+        background: linear-gradient(to bottom, #5273ad, #6082bd, #6e91cc);
+        backdrop-filter: blur(1.5px);
+    }
+
+    .sust-tec h3 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 1.8em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        opacity: 0.3;
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+
+    .sust-tec p {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 1.4em; 
+        padding: 1em 1em 1.6em 1.6em;
+        width: 95%;
+    }
+
+    .holding {
+        padding-top: 10em;
+        display: flex;
+        justify-content: center;
+        gap: 2.8em;
+        align-items: center;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    h5 {
+        color: rgba(60, 60, 59, 0.30);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4.15625rem; /* 266% */
+        letter-spacing: -0.0625rem;    
+    }
+
+    .holding .fers-group {
+        width: 50%;
+    }
+
+    .holding .fers-group h2 {
+        color: #2C2C2C;
+        font-family: Plus Jakarta Sans;
+        font-size: 2.3em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.3em; /* 137% */
+        padding-bottom: 0.3em;
+    }
+
+    .holding .fers-group p {
+        color: #191919;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.6em;
+        letter-spacing: -0.04313rem;
+        margin-top: 1rem;
+    }
+
+    .holding .img-holding img {
+        padding-left: 3em;
+        width:100%;
+    }
+
+    .unid {
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 8em;
+    }
+
+    .unid .unidades .unid-negocio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5em;
+    }
+
+    .unid-negocio-mb {
+        display: none;
+    }
+
+    .unid .unidades h5 {
+        color: rgba(60, 60, 59, 0.30);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4.15625rem; /* 266% */
+        letter-spacing: -0.0625rem;    
+    }
+
+    .unidades .unid-negocio a img {
+        border-radius: 1em;
+        width: 100%;
+    }
+
+    .unidades .unid-negocio a img:hover {
+        opacity: 80%;
+    }
+
+    .carrusel-aliados-mb {
+        display: none;
+    }
+
+    .aliados-estrategicos h5 {
+        padding-top: 4em;
+        padding-left: 3.6%;
+        padding-bottom: 1em;
+    }
+
+    .aliados-estrategicos .degree img {
+        width: 100%;
+        height: 5em;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .aliados-estrategicos {
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+        width: max-content;
+        overflow: hidden;
+    }
+
+    .aliados-estrategicos .aliados .carrusel-aliados {
+        animation: slideLeft 20s linear infinite;  
+    }
+
+    .aliados-estrategicos .aliados .carrusel-aliados img {
+        filter: grayscale(100%);
+        height: 5em;
+        margin-right: 20px;
+        border-radius: 1.53675rem;
+        background: rgba(25, 25, 25, 0.05);  
+        padding: 1em 3em 1em 3em;
+        opacity: 80%;
+        list-style: none;
+    }
+
+    @keyframes slideLeft {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-20%);
+        }
+    }
+
+    .contacto-form .cont-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 10em;
+        padding-bottom: 7em;
+    }
+
+    .contacto-form .cont-form .text-contct {
+        width: 60%;
+    }
+
+    .contacto-form .cont-form .text-contct p {
+        color: rgba(25, 25, 25, 0.60);
+        font-family: Plus Jakarta Sans;
+        font-size: 1.3em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.6em; /* 159.091% */
+        letter-spacing: -0.03em;
+        padding-right: 3em;
+        padding-top: 0.7em;
+    }
+
+    .contacto-form .cont-form .text-contct h2 {
+        color: #191919;
+        font-family: Plus Jakarta Sans;
+        font-size: 2.4em;
+        font-weight: 400;
+        line-height: 1.2em; 
+        letter-spacing: -0.05em;
+        overflow: hidden;
+    }
+
+    #form-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.7em;
+        flex: 1 0 0;
+        align-self: stretch;
+        padding-right: 2%;
+    }
+
+    #form-contacto ::placeholder {
+        color: var(--Black, #121A1B);
+        font-family: Plus Jakarta Sans;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1em; /* 80% */
+        letter-spacing: -0.025em;
+    }
+
+    #form-contacto input {
+        border-radius: 1em;
+        border: none;
+        background: rgba(0, 0, 0, 0.03);
+        display: flex;
+        padding: 2em 1em 1.8em 1em;
+        align-items: center;
+        gap: 0.5em;
+        align-self: stretch;
+    }
+
+    #form-contacto #mensaje {
+        border-radius: 1.2em;
+        border: 1px solid var(--Linear-Card-Stroke, #FFF);
+        background: rgba(0, 0, 0, 0.03);
+        display: flex;
+        padding: 1.5em 1em;
+        align-items: center;
+        gap: 0.5em;
+        align-self: stretch;
+        font-size: 1.15rem;
+    }
+
+    #form-contacto .button-form {
+        border-radius: 10.50763rem;
+        background: #503975;
+        color: #FFF;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.05325rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.03163rem;    
+        display: flex;
+        padding: 1.1rem 1.4375rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.21013rem;
+        width: 13rem;
+    }
+
+    #form-contacto .button-form i {
+        width: 1.52363rem;
+        padding: 0.42263rem 0.33331rem 0.39994rem 0.314rem;
+    }
+
+    #form-contacto .button-form:hover {
+        background-color: #412d5e;
+    }
+
+    .img-footer {
+        background: url(Assets/foot-img.png)  center top /cover no-repeat fixed;
+        height: 18rem;
+    }
+    
+    .img-footer-mb {
+        display: none;
+    }
+
+    .img-footer h2 {
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        padding-top: 2em;
+        text-align: center;
+}
+
+    .foot-links {
+        display: flex;
+        align-items: flex-start;
+        gap: 4em;
+        background: #144264;
+        list-style: none;
+        padding-left: 11%;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+
+    .foot-links h4 a {
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.1em;
+        font-style: normal;
+        font-weight: 500;
+        text-decoration: none;
+        line-height: 2em; /* 150% */
+    }
+
+    .foot-links li a {
+        color: rgba(255, 255, 255, 0.60);
+        font-family: Inter;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: 2em; /* 150% */
+    }
+
+    .foot-links img {
+        padding-left: 8%;
+    }
+
+    .foot-inf {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        padding: 1em 11% 1em 10%;
+        background: #144264;
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 0.9em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: lowercase;
+        border-top: solid 1px #446883;
+        padding-right: 15em;
+    }
+
+    .foot-inf .gr-fers {
+        display: flex;
+    }
+
+    .foot-inf .gr-fers p {
+        font-family: Plus Jakarta Sans;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 25px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        overflow: hidden;
+        padding-left: 1.3em;
+        text-transform:initial;
+        padding-top: 0.4em;
+    }
+
+/**Sustentabilidad y tecnología**/
+    .hero-sust {
+        height: 27.125rem;
+        background: url(Assets/hero-sustent.png) top /cover no-repeat fixed;
+    }
+
+    .hero-sust h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 600;
+        padding-top: 5.7em;
+    }
+
+    .sust h2 {
+        color: #121A1B;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 2.5em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 63.912px; /* 106.521% */
+        letter-spacing: -2.4px;    
+        padding-top: 5rem;
+    }
+
+    .sust {
+        padding-bottom: 15rem;
+    }
+
+    .sust p {
+        padding-top: 2em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; /* 182.609% */
+        letter-spacing: -0.03594rem;
+        padding-left: 18%;
+        padding-right: 18%;
+        text-align: justify;
+    }
+
+
+    .bpa-bpg img {
+        padding-left: 20%;
+        padding-top: 2em;
+    }
+
+    .gan-gest-tic img {
+        padding-left: 13%;
+    }
+
+    .bpa-bpg-mb {
+        display: none;
+    }
+
+    .gan-gest-tic-mb {
+        display: none;
+    }
+
+    .sust-div .certificaciones-unid .cuadro-certificaciones-sust {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 2em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .sust-div .certificaciones-unid .cuadro-certificaciones-sust li {
+        border-radius: 0.77644rem;
+        border: 0.991px dashed rgba(0, 0, 0, 0.50);
+        background: linear-gradient(180deg, #8CDC65 0%, #6EB54C 100%);
+        padding: 1.4em;
+        width: 18.5em;
+        height: 9em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 1em;
+    }
+
+/**NOSOTROS**/
+    .hero-nos {
+        background: url(Assets/hero-nosotros.png) fixed;     
+        background-size: 110%; 
+        background-position: top; 
+        background-repeat: no-repeat; 
+        height: 27.125rem;
+    }
+
+    .hero-nos h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 600;
+        padding-top: 5.7em;
+    }
+
+    .buttons-nosotros {
+        display: flex;
+        padding: 2.875rem 0rem 0.4375rem 0rem;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.6875rem;
+        flex-shrink: 0;
+        list-style: none;
+        position: relative;
+        background-color: #F9F7F1;
+        text-decoration: none;
+    }
+    
+    .buttons-nosotros li {
+        text-decoration: none;
+    }
+    
+    .buttons-nosotros a {
+        display: flex;
+        padding: 0.85269rem 1.63981rem 0.85269rem 1.50863rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.45913rem;
+        border-radius: 6.55913rem;
+        border: 1.049px solid #000000;
+        opacity: 0.3;
+        text-decoration: none;
+        color: #191919;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.03375rem;
+    }
+    
+    .buttons-nosotros li.active a {
+        opacity: 1;
+        background-color: #144264;
+        color: white;
+    }
+        
+/**Fersam group**/
+    #Fersam-Group {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #Fersam-Group .img-group {
+        padding-left: 18%;
+        padding-right: 18%;
+        padding-top: 2em;
+    }
+
+    #Fersam-Group p {
+        padding-top: 2em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; /* 182.609% */
+        letter-spacing: -0.03594rem;
+        padding-left: 18%;
+        padding-right: 18%;
+        text-align: justify;
+    }
+
+    .degree .deg-izq {
+        width: 8%;
+        position: absolute;
+        z-index: 3;
+        background: linear-gradient(90deg, #F9F7F1 0%, rgba(249, 247, 241, 0.00) 100%);  
+        height: 30em;  
+        margin-top: 5em;
+    }
+
+    .degree .deg-der {
+        width: 5%;
+        position: absolute;
+        z-index: 3;
+        background: linear-gradient(-90deg, #F9F7F1 0%, rgba(249, 247, 241, 0.00) 100%);        
+        height: 30em;  
+        margin-top: 5em;
+        margin-left: 95%;
+    }
+
+    .galeria-nosotros {
+        overflow: none; 
+        position: relative;
+        width: auto;
+        padding-top: 6em;
+        white-space: nowrap;  
+    }
+    
+    .galeria-lista {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        animation: slide 35s linear infinite;  
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(-0%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .galeria-lista img {
+        box-sizing: border-box;
+        object-fit: cover;
+        border-radius: 0.6em;
+        height: 12em;
+        margin-left: 0.5em;
+    }
+    
+        
+    .botones-ant-sig {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2em;
+        margin-top: 5em;
+        padding-bottom: 5em;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig button {
+        border-radius: 12em;
+        border: 2.2px solid #000;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 1em 3em;
+    }
+
+    .botones-ant-sig button:hover {
+        border: 2px solid #000000;
+        opacity: 40%;
+        color: #000000;
+    }
+
+    .botones-ant-sig button a i {
+        padding-left: 0.4em;
+        padding-right: 0.2em;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig .sig a {
+        width: max-content;
+    }
+
+
+    .botones-ant-sig button a {
+        text-decoration: none;
+        color: #000;
+        font-family: Inter;
+        font-size: 1.4em;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.03756em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig .ant .inactive {
+        border-radius: 50%;
+        padding: 1rem 1rem 1rem 1rem;
+        margin-right: 0.5rem;
+        border: 1.5px solid rgba(25, 25, 25, 0.315);
+        background: rgba(25, 25, 25, 0.05);
+    }
+
+    .botones-ant-sig .ant {
+        border-radius: 5em;
+        border: 2.2px solid #000;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 1.1em 1.1em;
+        margin-right: 1em;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig .ant i {
+        color: #000000;
+        opacity: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig .inactive {
+        opacity: 30%;
+    }
+
+/**Fersam agroindustrial**/
+
+    #Fersam-agroindustrial {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #Fersam-agroindustrial p {
+        padding-top: 2em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; /* 182.609% */
+        letter-spacing: -0.03594rem;
+        padding-left: 18%;
+        padding-right: 18%;
+        text-align: justify;
+    }
+
+    #Fersam-agroindustrial .img-agro {
+        padding-left: 18%;
+        padding-right: 18%;
+        padding-top: 2%;
+    }
+
+/**Estancia las cabezas**/
+    #Estancia-Las-Cabezas p {
+        padding-top: 2em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; /* 182.609% */
+        letter-spacing: -0.03594rem;
+        padding-left: 18%;
+        padding-right: 18%;
+        text-align: justify;
+    }
+
+    #Estancia-Las-Cabezas {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #Estancia-Las-Cabezas .img-lascabezas {
+        margin-top: 1.5em;
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+
+/**Visión**/
+    #Vision {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #Vision p {
+        padding-top: 2em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; /* 182.609% */
+        letter-spacing: -0.03594rem;
+        padding-left: 18%;
+        padding-right: 18%;
+        text-align: justify;
+    }
+
+    #Vision .img-vision {
+        padding-left: 18%;
+        padding-right: 18%;
+        padding-top: 1.5em;
+    }
+
+    #Vision .nuestros-valores h4 {
+        color: rgba(60, 60, 59, 0.30);
+        font-family: "Inter";
+        font-size: 1.5625em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.88363em; /* 248.554% */
+        letter-spacing: -0.03125em;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+
+    #Vision .nuestros-valores .valores li {
+        color: #144264;
+        font-family: Inter;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.071rem;
+        text-transform: capitalize;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+    }
+
+    #Vision .nuestros-valores .valores li i {
+        color: #000;
+        opacity: 0.3;
+        font-size: 1.4em;
+        margin-right: 0.5em;
+    }
+
+    #Vision .nuestros-valores .valores li img {
+        margin-right: 0.5em;
+    }
+
+    #Vision .nuestros-valores .valores .res-equip {
+        display: flex;
+        gap: 3em;
+        justify-content: center;
+        margin-bottom: 5em;
+    }
+
+    #Vision .nuestros-valores .valores .int-exc-adap {
+        display: flex;
+        gap: 3em;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    #Vision .nuestros-valores .valores li img:hover {
+        opacity: 70%;
+    }
+
+    #Vision .nuestros-valores .valores li i:hover {
+        opacity: 20%;
+    }
+
+
+/**Comité ejecutivo**/
+    #Comite-Ejecutivo {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #Comite-Ejecutivo .comite-ejecutivo {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 16%;
+        padding-right: 8%;
+
+    }
+
+    #Comite-Ejecutivo .comite-ejecutivo .com-ej {
+        width: 50%;
+        display: flex;
+        gap: 2em;
+        margin-top: 3em;
+        align-items: center;
+    }
+
+    #Comite-Ejecutivo .comite-ejecutivo .text-eq h4 {
+        color: #C2C2C2;
+        text-align: justify;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5em; /* 201.337% */
+        letter-spacing: -0.02963rem;
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+
+    #Comite-Ejecutivo .comite-ejecutivo .text-eq span {
+        color: #121A1B;
+        text-align: justify;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2em; /* 165.822% */
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+
+    #Comite-Ejecutivo .comite-ejecutivo .text-eq a i {
+        font-size: 1.3em;
+        overflow: hidden;
+        color: black;
+    }
+
+    .contenido {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        padding: 20px; 
+    }
+
+    .contenido.active {
+        display: block;
+    }
+
+/* UNIDADES DE NEGOCIO */
+    .hero-unidades {
+        background: url(Assets/Hero-unid.png)fixed;     
+        background-size: 110%; 
+        background-position: top; 
+        background-repeat: no-repeat; 
+        height: 27.125rem;
+    }
+
+    .hero-unidades h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 600;
+        padding-top: 5.7em;
+    }
+
+    .buttons-unidades {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 1em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        background-color: #F9F7F1;
+    }
+
+    .buttons-unidades li a {
+        display: block; 
+        width: 100%; 
+        height: 100%; 
+        padding: 0.8em 2em; 
+        text-align: center;
+        color: #191919;
+        font-family: Inter;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.03375em;
+        text-decoration: none;
+        opacity: 85%;
+    }
+    
+    .buttons-unidades li:hover {
+        border: 1px solid #FFF;
+        background: #144264;
+        opacity: 100%;
+        color: white !important;
+    }
+    
+    .buttons-unidades li.active {
+        border: 1px solid #FFF;
+        background-color: #144264;
+        opacity: 100%;
+        color: white !important;
+    }
+    
+    .buttons-unidades li.active a,
+    .buttons-unidades li a:hover {
+        color: white !important;
+    }
+    
+    .buttons-unidades li {
+        border-radius: 2em;
+        border: 1.049px solid #191919;
+        opacity: 0.3;
+        width: 10em;
+        text-align: center;
+    }
+    
+
+    .buttons-unidades li a {
+        overflow: hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis; 
+    }
+    
+/* Ganadería */
+    #Ganaderia {
+        position: relative;
+    }
+
+    #Ganaderia h2 {
+        color: #121A1B;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 2.5em;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: -2.4px;    
+        padding-top: 1rem;
+    }
+
+        #Ganaderia .list-gan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 1.2em;
+    }
+
+    #Ganaderia .list-gan li {
+        border-radius: 1.29138rem;
+        border: 1.76px solid rgba(25, 25, 25, 0.10);
+        background: #E6E6E6;
+        padding: 1em 2em;
+        display: flex;
+        align-items: center;
+        color: #144264;
+        font-family: Inter;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 2em;
+        line-height: 48px;
+        letter-spacing: -0.06em;
+        text-align: left;
+    }
+
+    #Ganaderia .list-gan li:hover {
+        background: #d6d6d6;
+    }
+
+    #Ganaderia .list-gan li img {
+        padding-right: 0.5em;
+        height: 2em;
+    }
+
+    #Ganaderia .punteo-unid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2em;
+        margin-top: 1em;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 2em;
+    }
+
+    #Ganaderia .ganaderia-contain p {
+        padding-top: 2em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; /* 182.609% */
+        letter-spacing: -0.03594rem;
+        padding-left: 18%;
+        padding-right: 18%;
+        text-align: justify;
+    }
+
+    #Ganaderia .ganaderia-contain .img-ganaderia {
+        padding: 2em 18% 1em 18%; 
+        width: 100%;
+    }
+
+    #Ganaderia .eficiencia-ganaderia h3 {
+        font-family: Plus Jakarta Sans;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: -0.025em;
+        text-align: center;
+        margin-top: 4em;
+        }
+
+    #Ganaderia .eficiencia-ganaderia p {
+        padding-top: 2em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; /* 182.609% */
+        letter-spacing: -0.03594rem;
+        padding-left: 18%;
+        padding-right: 18%;
+        text-align: justify;
+    }
+
+    #Ganaderia .eficiencia-ganaderia .img-ganaderia {
+        padding: 2em 18% 1em 18%; 
+        width: 100%;       
+    }
+
+    #Ganaderia .eficiencia-ganaderia .punteo-unid-mb
+{
+    display: none;
+}
+
+/* Agricultura */
+    #Agricultura {
+        position: relative;
+    }
+
+    #Agricultura h2 {
+        color: #121A1B;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 2.5em;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: -2.4px;    
+        padding-top: 1rem;
+    }
+
+    #Agricultura .list-ag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 1.2em;    
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+
+    #Agricultura .list-ag li {
+        border-radius: 1.29138rem;
+        border: 1.76px solid rgba(25, 25, 25, 0.10);
+        background: #E6E6E6;
+        padding: 1em 1.6em;
+        display: flex;
+        align-items: center;
+        color: #144264;
+        font-family: Inter;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 2em;
+    }
+
+    #Agricultura .list-ag li:hover {
+        background: #d6d6d6;
+    }
+
+    #Agricultura .list-ag li img {
+        padding-right: 0.3em;
+        height: 1.5em;
+    }
+
+    #Agricultura .parr-agric {
+        padding-top: 2em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; /* 182.609% */
+        letter-spacing: -0.03594rem;
+        padding-left: 18%;
+        padding-right: 18%;
+        text-align: justify;
+    }
+
+    #Agricultura .img-agri {
+        padding-top: 2em;
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+
+    #Agricultura .certificaciones-unid h3 {
+        color: rgba(18, 26, 27, 0.20);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6em;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.05625em;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    #Agricultura .cuadro-certificaciones-agricultura {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 0.4em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    #Agricultura .cuadro-certificaciones-agricultura li {
+        border-radius: 0.77644rem;
+        border: 0.991px dashed rgba(0, 0, 0, 0.50);
+        background: linear-gradient(180deg, #8CDC65 0%, #6EB54C 100%);
+        padding: 2em;
+        width: 15em;
+        height: 9em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Agricultura .proyectos-agricultura {
+        margin-top: 3em;
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+
+    .proyectos-agricultura h3 {
+        font-family: Plus Jakarta Sans;
+        font-size: 2em;
+        font-weight: 300;
+        letter-spacing: -0.06em;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #Agricultura .proyectos-agricultura .proyect-agricultura {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1em;
+    }
+
+    #Agricultura .proyectos-agricultura .proyect-agricultura .proy {
+        display: flex;
+        width: 30%;
+        height: 18em;
+        flex-direction: column;
+        align-items: baseline;
+        flex-shrink: 0;
+        border-radius: 1.72769em;
+        border: 0.921px solid var(--grey-60, #D0D1D6);    
+        padding: 1.3em 1.3em;
+    }
+
+    #Agricultura .proyectos-agricultura .proyect-agricultura span {
+        color: #343434;
+        font-family: Inter;
+        font-size: 1.3em;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        text-align: left;
+        padding-bottom: 0.3em;
+        padding-top: 1em;
+    }
+
+    #Agricultura .proyectos-agricultura .proyect-agricultura .proy p {
+        color: rgba(101, 101, 101, 0.50);
+        font-family: Inter;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.4em;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+/* Energias */
+    #Energias {
+        position: relative;
+    }
+
+    #Energias h2 {
+        color: #121A1B;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 2.5em;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: -2.4px;    
+        padding-top: 1rem;
+    }
+
+    #Energias .list-energ {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 1.2em;
+    }
+
+    #Energias .list-energ li {
+        border-radius: 1.29138rem;
+        border: 1.76px solid rgba(25, 25, 25, 0.10);
+        background: #E6E6E6;
+        padding: 1em 2em;
+        display: flex;
+        align-items: center;
+        color: #144264;
+        font-family: Inter;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 2em;
+    }
+
+    #Energias .list-energ li:hover {
+        background: #d6d6d6;
+    }
+
+    #Energias .list-energ li img {
+        padding-right: 0.5em;
+        height: 2em;
+    }
+
+    #Energias .parr-energ {
+        padding-top: 2em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; /* 182.609% */
+        letter-spacing: -0.03594rem;
+        padding-left: 18%;
+        padding-right: 18%;
+        text-align: justify;
+    }
+
+    #Energias .img-energ {
+        padding-left: 18%;
+        padding-right: 18%;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    #Energias .proyectos-energias {
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+
+    #Energias .proyectos-energias h3 {
+        font-family: Plus Jakarta Sans;
+        font-size: 2em;
+        font-weight: 300;
+        letter-spacing: -0.06em;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #Energias .proyectos-energias .hidrogeno-verde span {
+        color: #343434e0;
+        font-family: Inter;
+        font-size: 1.3em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2em; /* 277.145% */
+        letter-spacing: -0.031em;
+        padding-top: 1em;
+        padding-bottom: 0.7em;
+    }
+
+    #Energias .proyectos-energias .hidrogeno-verde p {
+        color: rgba(0, 0, 0, 0.60);
+        text-align: center;
+        font-family: Inter;
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 149%; /* 1.8625rem */
+        letter-spacing: -0.025rem;
+        width: 80%;
+    }
+
+    #Energias .proyectos-energias .hidrogeno-verde {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1em;
+        border: 0.4px solid #00000075;  
+        padding: 1em; 
+        margin-top: 2em; 
+    }
+
+    #Energias .proyectos-energias .hidrogeno-verde .sub-texto {
+        color: rgba(101, 101, 101, 0.60);
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5em; /* 159.121% */
+        letter-spacing: -0.028em;
+    }
+
+    #Energias .proyectos-energias .biomassa .sub-texto {
+        color: rgba(101, 101, 101, 0.60);
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5em; /* 159.121% */
+        letter-spacing: -0.028em;
+    }
+
+    #Energias .proyectos-energias .biomassa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1em;
+        border: 0.4px solid #00000075;  
+        padding: 1em; 
+        margin-top: 2em; 
+}
+
+    #Energias .proyectos-energias .biomassa span {
+        color: #343434e0;
+        font-family: Inter;
+        font-size: 1.3em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2em; /* 277.145% */
+        letter-spacing: -0.031em;
+        padding-top: 1em;
+        padding-bottom: 0.7em;
+    }
+
+    #Energias .proyectos-energias .biomassa p {
+        color: rgba(0, 0, 0, 0.60);
+        text-align: center;
+        font-family: Inter;
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 149%; /* 1.8625rem */
+        letter-spacing: -0.025rem;
+        width: 80%;
+        padding-bottom: 2em;
+    }
+
+/* Agtech */
+    #Agtech {
+        position: relative;
+    }
+
+    #Agtech h2 {
+        color: #121A1B;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 2.5em;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: -2.4px;    
+        padding-top: 1rem;
+    }
+
+    #Agtech p {
+        padding-top: 2em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; /* 182.609% */
+        letter-spacing: -0.03594rem;
+        padding-left: 18%;
+        padding-right: 18%;
+        text-align: justify;
+    }
+
+    #Agtech .img-agt {
+        padding-left: 18%;
+        padding-right: 18%;
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+
+    #Agtech .botones-ant-sig .inventure {
+        padding-left: 10em;
+    }
+
+    #Agtech .inventure-mb {
+        display: none;
+    }
+
+    .hero-contacto {
+        background: url(Assets/Hero-contact.png)fixed;     
+        background-size: 110%; 
+        background-position: top; 
+        background-repeat: no-repeat; 
+        height: 27.125rem;
+    }
+
+    .hero-contacto h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 600;
+        padding-top: 5.7em;
+    }
+
+    .contacto-form {
+        padding-left: 12%;
+        padding-right: 12%;    
+    }
+
+    .contacto-form .cont-form {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3em;
+    }
+
+    .contacto-form .cont-form .text-contact {
+        width: 50%;
+        font-size: 1.2em;
+        line-height: 2rem; /* 182.609% */
+    }
+    
+    .contacto-form .cont-form .button-form-contact {
+        border-radius: 10.50763rem;
+        background: #144264;
+        display: flex;
+        padding: 1em 3em;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2em;
+        color: #FFF;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.1em;
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        overflow: hidden;
+    }
+
+    .contacto-form .cont-form .button-form-contact i {
+        padding-left: 0.3em;
+        width: 2em;
+        overflow: hidden;
+    }
+
+
+    .contacto-form .cont-form .button-form-contact:hover {
+        background: #0c283d;
+        overflow: hidden;
+    }
+
+    .contacto-form #form-contacto ::placeholder {
+        font-size: 1.1rem;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .galeria-nosotros-mb {
+        display: none;
+    }
+
+    .cuadro-certificaciones-agricultura-mb {
+        display: none;
+    }
+    
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+    header {
+        display: none;
+    }
+    .menu-mobile {
+        position: fixed;
+        background-color: #144264;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        }
+
+    .menu-mobile a img {
+        position: absolute;
+        margin-top: 2.2em;
+        padding-left: 1em;
+        width: 50%;
+    }
+
+    .menu-mobile .header-mobile {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .menu-mobile .header-mobile nav ul{
+        display: none;
+    }
+    
+    .menu-mobile .header-mobile nav input:checked  ~ ul{
+        display: block;
+        margin-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    
+    .menu-mobile .header-mobile nav input {
+        display: none;
+    }
+    
+    .menu-mobile .header-mobile nav label {
+        box-sizing: border-box;
+        display: inline-block;
+        border-radius: 5px;
+        line-height: 40px;
+        text-align: left;
+        color: white;
+        font-size: 2em;
+        padding: 1em 0.6em;
+    }
+    
+    /* Estilo del boton cuando se pasa el mouse por encima*/
+    .menu-mobile .header-mobile nav label:hover{
+        color: rgb(190, 190, 190);
+    }
+
+    /* Estilo del boton cuando el menú está expandido*/
+    .menu-mobile .header-mobile nav input:checked ~ label {
+        color: rgb(202, 202, 202); 
+        margin-left: 9em;
+    }
+    
+    .menu-mobile .header-mobile nav ul .desplegable {
+        text-align: center;
+    }
+
+    .desplegable {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        background-color: #144264;
+
+    }
+    
+    .menu-mobile .header-mobile nav ul li {
+        display: block;
+        width: 100%;
+        list-style: none;
+        font-size: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-top: solid 1px white;
+    }
+
+    .menu-mobile .header-mobile nav li a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-family: Inter;
+        font-size: 1.4em;
+        font-weight: 400;
+        display: block;
+        padding: 1.7em 0;
+    }
+    
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .menu-mobile .header-mobile nav li:hover {
+        color: #C2C2C2;
+    }
+
+    .oculto {
+        top: -100%; /* Cambia esto según la altura de tu menú para ocultarlo completamente */
+    }
+    
+    .visible {
+        top: 0;
+    }    
+    
+    .hero-section {
+        height: 100vh;
+        background: url('Assets/hero-home-mb.png') top /cover no-repeat fixed; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 8em;
+        color: #fff;
+        font-size: 1.7em;
+        text-align: center;
+        font-family: Plus Jakarta Sans;
+}
+
+    .hero-section i {
+        margin-top: 8em;
+        border: solid 1px;
+        border-radius: 2em;
+        padding: 1em;
+        font-size: 0.8em;
+        color: #fff;
+        transition: ease 7s;
+    }
+
+    section {
+        background-color: #F9F7F1;
+        margin: 0;
+    }
+
+    .about {
+        display: block;
+        padding-top: 3em;
+    }
+
+    .about p {
+        color: rgba(20, 66, 100, 0.90);
+        font-family: Plus Jakarta Sans;
+        font-size: 1.3em;
+        font-weight: 500;
+        line-height: 1.5em; 
+        letter-spacing: -0.01em;
+        width: 85%;
+        flex-shrink: 0;
+        margin: auto;
+        text-align: left;
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+
+    .sust-border {
+        border-radius: 1em;
+        border: 1px solid var(--grey-60, #D0D1D6);
+        padding: 0.7em;
+        width: 85%;
+        margin: auto;
+        margin-top: 2em;
+    }
+
+    .sust-tec {
+        border-radius: 1em;
+        background: linear-gradient(to bottom, #5273ad, #6082bd, #6e91cc);
+        backdrop-filter: blur(1.5px);
+    }
+
+    .sust-tec h3 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 1.7em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        opacity: 0.3;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1.5em;
+        text-align: left;
+    }
+
+    .sust-tec p {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 1.4em; 
+        padding: 1em 0.2em 1.6em 0.5em;
+        letter-spacing: -0.02em;
+        z-index: 0;
+        margin-bottom: 1em;
+        text-align: left;
+
+    }
+
+    .holding {
+        padding-top: 4em;
+        display: block;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    h5 {
+        color: rgba(60, 60, 59, 0.30);
+        font-family: Plus Jakarta Sans;
+        font-size: 1.7em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2em; /* 266% */
+        letter-spacing: -0.0625em;
+    }
+
+    .holding .fers-group h2 {
+        color: #2C2C2C;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.5em;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.3em; /* 137% */
+        letter-spacing: -0.03em;    
+        padding-bottom: 0.3em;
+    }
+
+    .holding .fers-group p {
+        color: #191919;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.6em;
+        letter-spacing: -0.04313rem;
+        margin-top: 1rem;
+        margin-bottom: 1em;
+    }
+
+    .img-holding img {
+        width: 100% !important;
+    }
+
+    .unid {
+        padding-top: 3em;
+        display: block;
+    }
+
+    .unid .unidades h5 {
+        color: rgba(60, 60, 59, 0.30);
+        font-family: Plus Jakarta Sans;
+        font-size: 1.7em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2em; /* 266% */
+        letter-spacing: -0.0625em;
+        padding-left: 0.8em;
+    }
+    
+    .unidades .unid-negocio {
+        display: none;
+    }
+
+    .unidades .unid-negocio-mb a {
+        flex-shrink: 0;  
+    }
+
+    .unidades .unid-negocio-mb {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .unidades .unid-negocio-mb a img {
+        border-radius: 1em;
+        margin-top: 1em;
+        height: 7em;
+        width: 100%;
+    }
+
+
+    .unidades .unid-negocio-mb a img:hover {
+        opacity: 80%;
+    }
+
+    .aliados-estrategicos h5 {
+        padding-top: 1em;
+        padding-left: 0.5%;
+        padding-bottom: 0.5em;
+        font-size: 1.7em;
+    }
+
+    .aliados-estrategicos {
+        display: flex;
+        width: max-content;
+        overflow: hidden;
+    }
+
+    .aliados-estrategicos .aliados .carrusel-aliados {
+        animation: slideLeft 10s linear infinite;  
+    }
+
+    .aliados-estrategicos .aliados .carrusel-aliados img {
+        filter: grayscale(100%);
+        height: 4.5em;
+        margin-right: 20px;
+        border-radius: 1.53675rem;
+        background: rgba(25, 25, 25, 0.05);  
+        padding: 1em 3em 1em 3em;
+        opacity: 80%;
+        list-style: none;
+        margin-bottom: 1em;
+    }
+
+    @keyframes slideLeft {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-20%);
+        }
+    }
+
+    .aliados-estrategicos .degree img {
+        display: none;    
+    }
+
+
+    .carrusel-aliados-mb {
+        display: flex;
+        width: max-content;
+        overflow: hidden;
+    }
+
+
+    .aliados-estrategicos .aliados .carrusel-aliados-mb {
+        animation: slideRight 35s linear infinite;  
+    }
+
+    .aliados-estrategicos .aliados .carrusel-aliados-mb img {
+        filter: grayscale(100%);
+        height: 4.5em;
+        margin-right: 20px;
+        border-radius: 1.53675rem;
+        background: rgba(25, 25, 25, 0.05);  
+        padding: 1em 3em 1em 3em;
+        opacity: 80%;
+        list-style: none;
+        margin-bottom: 2em;
+    }
+
+    @keyframes slideRight {
+        0% {
+            transform: translateX(-80%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+
+    .contacto-form {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .contacto-form .cont-form {
+        display: block;
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+
+    .contacto-form .cont-form p {
+        color: rgba(25, 25, 25, 0.60);
+        font-family: Plus Jakarta Sans;
+        font-size: 1.4em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5em; /* 159.091% */
+        letter-spacing: -0.05em;
+        padding-top: 0.7em;
+    }
+
+    .contacto-form .cont-form h2 {
+        color: #191919;
+        font-family: Plus Jakarta Sans;
+        font-size: 2.1em;
+        font-weight: 400;
+        line-height: 1.2em; 
+        letter-spacing: -0.05em;
+        overflow: hidden;
+    }
+
+    #form-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        flex: 1 0 0;
+        align-self: stretch;
+        margin-top: 1em;
+        margin-right: 3%;
+    }
+
+    #form-contacto ::placeholder {
+        color: var(--Black, #121A1B);
+        font-family: Plus Jakarta Sans;
+        font-size: 1.5em;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1em; /* 80% */
+        letter-spacing: -0.025em;
+    }
+
+    #form-contacto input {
+        border-radius: 1em;
+        border: none;
+        background: rgba(0, 0, 0, 0.03);
+        display: flex;
+        padding: 1.5em 2em;
+        align-items: center;
+        gap: 0.5em;
+        align-self: stretch;
+    }
+
+    #form-contacto #mensaje {
+        border-radius: 1.2em;
+        border: 1px solid var(--Linear-Card-Stroke, #FFF);
+        background: rgba(0, 0, 0, 0.03);
+        display: flex;
+        padding: 1.5em 1.5em;
+        align-items: center;
+        gap: 0.5em;
+        align-self: stretch;
+    }
+
+    .contacto-form .cont-form .text-contct {
+        text-align: left;
+    }
+
+
+    #form-contacto .button-form {
+        display: flex;
+        height: 3.5em;
+        padding: 1em 1.4375em;
+        justify-content: space-around;
+        align-items: baseline;
+        gap: 0.21013em;
+        border-radius: 10.50763em;
+        background: #144264;
+        width: fit-content;
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 600;
+        overflow: hidden;
+        margin-bottom: 3em;
+    }
+
+    #form-contacto .button-form i {
+        padding-right: 0.2em;
+        overflow: hidden;
+    }
+
+    #form-contacto .button-form:hover {
+        background-color: #412d5e;
+        overflow: hidden;
+    }
+
+    .img-footer {
+        display: none;
+    }
+
+    .img-footer-mb {
+        background: url(Assets/foto-foot-mb.png) center/cover;
+        width: 100%;
+        height: 35em;
+    }
+    
+    .img-footer-mb h2 {
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 2.8em;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        padding-top: 5em;
+        text-align: left;
+        padding-left: 8%;
+        padding-right: 8%;
+}
+
+    .foot-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2em;
+        background: #144264;
+        list-style: none;
+        padding-left: 12%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .foot-links h4 a {
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.5em;
+        font-style: normal;
+        font-weight: 500;
+        text-decoration: none;
+        line-height: 1.9em; /* 150% */
+    }
+
+    .foot-links li a {
+        color: rgba(255, 255, 255, 0.60);
+        font-family: Inter;
+        font-size: 1.3em;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: 1.9em; /* 150% */
+    }
+
+    .foot-links img {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 5%;
+        padding-bottom: 1em;
+        padding-top: 3em;
+    }
+
+    .foot-inf {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #144264;
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.4em;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: lowercase;
+        border-top: solid 1px #446883;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    .foot-inf .redes-log {
+        padding-top: 1em;
+    }
+
+    .foot-inf .redes-log a img {
+        width: 1.5em;
+    }
+
+    /**Sustentabilidad y tecnología**/
+    .hero-sust {
+        height: 45em;
+        background: url(Assets/hero-sust-mb.png) top /cover no-repeat;
+        overflow: hidden;
+    }
+
+    .hero-sust h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 2.5em;
+        font-style: normal;
+        font-weight: 600;
+        padding-top: 8em;
+        padding-left: 6%;
+        padding-right: 6%;
+        
+    }
+
+    .sust h2 {
+        color: #121A1B;
+        text-align: left;
+        font-family: "Plus Jakarta Sans";
+        font-size: 2em;
+        font-style: normal;
+        font-weight: 300;
+        padding-top: 2em;
+        letter-spacing: -0.06rem;
+        padding-left: 7%;
+    }
+
+    .sust {
+        padding-bottom: 15rem;
+    }
+
+    .sust p {
+        padding-top: 1em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.3em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.6em; /* 182.609% */
+        letter-spacing: -0.03594em;
+        padding-left: 9%;
+        padding-right: 9%;
+        text-align: left;
+    }
+
+    .sust-div-mob {
+        width: 85%;
+        padding-left: 13%;
+    }
+
+    .bpa-bpg img {
+        padding-left: 20%;
+        padding-top: 2em;
+    }
+
+    .gan-gest-tic img {
+        padding-left: 13%;
+    }
+
+    .bpa-bpg {
+        display: none;
+    }
+
+    .bpa-bpg-mb {
+        padding-top: 1em;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .gan-gest-tic {
+        display: none;
+    }
+
+
+    /**NOSOTROS**/
+    .hero-nos {
+        background: url(Assets/hero-nos-mb.png) center /cover no-repeat;     
+        height: 45em;
+        overflow: hidden;
+    }
+
+    .hero-nos h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 2.7em;
+        font-style: normal;
+        font-weight: 600;
+        padding-top: 8em;
+        padding-left: 5%;
+        padding-right: 5%;
+        
+    }
+
+    .buttons-nosotros {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        position: relative;
+        background-color: #F9F7F1;
+    }
+
+    .buttons-nosotros .b-ns a {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        padding-left: 2.4em;
+        padding-right: 2.4em;
+        margin-left: 0.5em;
+    }
+
+    .buttons-nosotros a {
+        display: inline-block;
+        padding: 1rem 0.85rem; 
+        border-radius: 6.55913rem;
+        border: 1.049px solid #000000;
+        opacity: 100%;
+        text-decoration: none;
+        color: #191919;
+        font-family: Inter;
+        font-size: 0.8em; 
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.03375rem;
+    }
+
+    .buttons-nosotros .b-nc a {
+        display: flex;
+        margin-right: 0.4em;
+        justify-content: space-between;
+        align-items: center;
+    }
+        
+        .buttons-nosotros li.active a {
+        opacity: 1;
+        background-color: #144264;
+        color: white;
+    }
+
+    #Fersam-Group {
+        position: relative;
+    }
+
+    #Fersam-Group .img-group {
+        padding-left: 5%;
+        padding-top: 1em;
+    }
+
+    #Fersam-Group p {
+        padding-top: 1em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.3em;
+        font-weight: 300;
+        line-height: 2.5rem; /* 182.609% */
+        letter-spacing: -0.03594em;
+        padding-left: 5%;
+        padding-right: 6%;
+        text-align: left;
+    }
+    
+    .degree .deg-izq {
+        display: none;    
+    }
+
+
+    .degree .deg-der {
+        display: none;    
+    }
+
+    .galeria-nosotros {
+        display: none;
+    }
+
+    .galeria-nosotros-mb {
+        overflow: none; 
+        position: relative;
+        width: auto;
+        padding-top: 6em;
+        white-space: nowrap;  
+    }
+    
+    .galeria-lista-mb {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        animation: slide 35s linear infinite;  
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(-0%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .galeria-lista-mb img {
+        box-sizing: border-box;
+        object-fit: cover;
+        border-radius: 0.6em;
+        height: 12em;
+        margin-left: 0.5em;
+    }
+                    
+    .botones-ant-sig {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2em;
+        margin-top: 5em;
+        padding-bottom: 5em;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig button {
+        border-radius: 12em;
+        border: 2.2px solid #000;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 1em 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botones-ant-sig button:hover {
+        border: 2px solid #000000;
+        opacity: 40%;
+        color: #000000;
+    }
+
+    .botones-ant-sig .sig a {
+        width: max-content;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig button a {
+        text-decoration: none;
+        color: #000;
+        font-family: Inter;
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.03756em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig button a i {
+        width: 2em;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig .ant .inactive {
+        border-radius: 50%;
+        padding: 1rem 1rem 1rem 1rem;
+        margin-right: 0.5rem;
+        border: 1.5px solid rgba(25, 25, 25, 0.315);
+        background: rgba(25, 25, 25, 0.05);
+    }
+
+    .botones-ant-sig .ant {
+        border-radius: 5em;
+        border: 2.2px solid #000;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 1.1em 1.1em;
+        margin-right: 1em;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig .ant i {
+        color: #000000;
+        opacity: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .botones-ant-sig .inactive {
+        opacity: 30%;
+    }
+
+    /**Fersam agroindustrial**/
+
+    #Fersam-agroindustrial {
+        position: relative;
+        padding-top: 5%;
+    }
+
+    #Fersam-agroindustrial p {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.3em;
+        font-weight: 300;
+        line-height: 2.5rem; /* 182.609% */
+        letter-spacing: -0.03594em;
+        padding-left: 5%;
+        padding-right: 6%;
+        text-align: left;
+    }
+
+    #Fersam-agroindustrial .img-agro {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+/**Estancia las cabezas**/
+#Estancia-Las-Cabezas p {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 2.5rem; /* 182.609% */
+    letter-spacing: -0.03594em;
+    padding-left: 5%;
+    padding-right: 6%;
+    text-align: left;
+}
+
+#Estancia-Las-Cabezas {
+    position: relative;
+    padding-top: 5%;
+}
+
+#Estancia-Las-Cabezas .img-lascabezas {
+    margin-bottom: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1em;
+}
+
+/**Visión**/
+#Vision {
+    position: relative;
+}
+
+#Vision p {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 2.5rem; /* 182.609% */
+    letter-spacing: -0.03594em;
+    padding-left: 5%;
+    padding-right: 6%;
+    text-align: left;
+}
+
+#Vision .img-vision {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#Vision .nuestros-valores h4 {
+    color: rgba(60, 60, 59, 0.30);
+    font-family: "Inter";
+    font-size: 1.6em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.88363em; /* 248.554% */
+    letter-spacing: -0.03125em;
+    padding-top: 6%;
+}
+
+#Vision .nuestros-valores .valores li {
+    color: #144264;
+    font-family: Inter;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 3rem; /* 236.888% */
+    letter-spacing: -0.071rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Vision .nuestros-valores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Vision .nuestros-valores .valores li i {
+    color: #000;
+    opacity: 0.3;
+    font-size: 1.2em;
+    padding-right:0.3em;
+}
+
+#Vision .nuestros-valores .valores .res-equip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -1em;
+}
+
+#Vision .nuestros-valores .valores .int-exc-adap {
+    display: block;
+    gap: 3em;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+/**Comité ejecutivo**/
+#Comite-Ejecutivo {
+    position: relative;
+}
+
+#Comite-Ejecutivo .comite-ejecutivo {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+#Comite-Ejecutivo .comite-ejecutivo .com-ej {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 3em;
+    align-items: center;
+}
+
+#Comite-Ejecutivo .comite-ejecutivo .com-ej img {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#Comite-Ejecutivo .comite-ejecutivo .text-eq {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#Comite-Ejecutivo .comite-ejecutivo .text-eq h4 {
+    color: #c2c2c2;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5em; /* 201.337% */
+    letter-spacing: -0.030rem;
+    text-transform: uppercase;
+    margin-bottom: 0.4em;
+
+}
+
+#Comite-Ejecutivo .comite-ejecutivo .text-eq span {
+    color: #121A1B;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4em; /* 165.822% */
+    letter-spacing: -0.04em;
+    overflow: hidden;
+}
+
+#Comite-Ejecutivo .comite-ejecutivo .text-eq a i {
+    font-size: 1.3em;
+    overflow: hidden;
+    color: black;
+}
+
+.contenido {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    padding: 20px; 
+}
+
+.contenido.active {
+    display: block;
+}
+
+/* UNIDADES DE NEGOCIO */
+.hero-unidades {
+    background: url(Assets/HERO-MB-UNIDADES_1.png) center /cover no-repeat;     
+    height: 45em;
+    overflow: hidden;
+    }
+
+.hero-unidades h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 8em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #F9F7F1;
+}
+
+.buttons-unidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em;
+    list-style: none;
+    position: relative;
+    background-color: #F9F7F1;
+    padding: 2rem 1rem 1rem 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buttons-unidades li {
+    text-decoration: none;
+    flex: 1 0 auto;
+    max-width: calc(50% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buttons-unidades a {
+    display: inline-block;
+    padding: 1.2rem 1.3rem; 
+    border-radius: 6.55913rem;
+    border: 1.049px solid #000000;
+    opacity: 100%;
+    text-decoration: none;
+    color: #191919;
+    font-family: Inter;
+    font-size: 16px; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.03375rem;
+    width: 100%;
+}
+    
+    .buttons-unidades li.active a {
+    opacity: 1;
+    background-color: #144264;
+    color: white;
+}
+
+
+/* Ganadería */
+#Ganaderia {
+    position: relative;
+    padding-top: 2em;
+}
+
+#Ganaderia h2 {
+    color: #343434;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2em;
+    letter-spacing: -0.06em;
+}
+
+#Ganaderia .list-gan {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 0.3em;
+}
+
+#Ganaderia .list-gan li {
+    width: auto;
+    border-radius: 0.8rem;
+    border: 1.76px solid rgba(25, 25, 25, 0.10);
+    background: #E6E6E6;
+    padding: 1.4em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #144264;
+    font-family: Inter;
+    font-size: 0.78em;
+    font-weight: 700;
+    letter-spacing: -0.06325em;
+    margin-bottom: 1em; 
+}
+
+#Ganaderia .list-gan li img {
+    padding-right: 0.3em;
+    height: 1.8em;
+    width: min-content;
+}
+
+#Ganaderia .punteo-unid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-top: 3em;
+}
+
+#Ganaderia .punteo-unid li {
+    color: #144264;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.36363rem; /* 236.888% */
+    letter-spacing: -0.071rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Ganaderia .punteo-unid li img {
+    padding-right: 0.3em;
+    height: 3em;
+}
+
+#Ganaderia .ganaderia-contain p {
+    color: #121A1B;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 2.2rem; /* 182.609% */
+    letter-spacing: -0.03594em;
+    letter-spacing: -0.03594rem;
+    padding-left: 5%;
+    padding-top: 1em;
+    padding-right: 5%;
+    text-align: left;
+}
+
+#Ganaderia .ganaderia-contain .img-ganaderia {
+    padding: 0.9em 5% 0em 5%; 
+    width: 100%;       
+}
+
+#Ganaderia .eficiencia-ganaderia h4 {
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    text-align: left;
+    padding-top: 2em;
+    line-height: 1.6em;
+    padding-left: 5%;
+}
+
+#Ganaderia .eficiencia-ganaderia p {
+    color: #121A1B;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: -1px;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 3em;
+    text-align: left;    
+}
+
+#Ganaderia .eficiencia-ganaderia .img-ganaderia {
+    padding: 2em 5% 0em 5%; 
+    width: 100%;       
+}
+
+#Ganaderia .eficiencia-ganaderia .punteo-unid
+{
+    display: none;
+} 
+
+
+#Ganaderia .eficiencia-ganaderia .punteo-unid-mb {
+    padding-top: 2em;
+}
+#Ganaderia .eficiencia-ganaderia h3 {
+    color: #121A1B;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8em;
+    letter-spacing: -1px;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 3em;
+    text-align: left;    
+}
+
+
+#Ganaderia .proyect-ganaderia h3 {
+    color: #000;
+    text-align: left;
+    font-family: "Plus Jakarta Sans";
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em; /* 76.278% */
+    letter-spacing: -0.07em;
+    padding-top: 2em;
+    padding-bottom: 0.8em;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+#Ganaderia .proyect-ganaderia .proy-ganaderia {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+#Ganaderia .proyect-ganaderia li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.727rem;
+    border: 0.921px solid var(--grey-60, #D0D1D6);
+    width: 90%;
+}
+
+#Ganaderia .proyect-ganaderia .proy-ganaderia h5 {
+    color: #343434;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.03456em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#Ganaderia .proyect-ganaderia .proy-ganaderia p {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2.5em;
+    color: rgba(101, 101, 101, 0.50);
+    font-family: Inter;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 1.61181rem */
+    letter-spacing: -0.023rem;
+    text-align: center;
+}
+
+/* Agricultura */
+#Agricultura {
+    position: relative;
+}
+
+#Agricultura h2 {
+    color: #343434;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2em;
+    letter-spacing: -0.06em;
+}
+
+#Agricultura .list-ag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#Agricultura .list-ag li {
+    width: calc(50% - 10px);
+    border-radius: 0.8rem;
+    border: 1px solid rgba(25, 25, 25, 0.10);
+    background: #E6E6E6;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    color: #144264;
+    font-family: Inter;
+    font-size: 0.71em;
+    font-weight: 700;
+    letter-spacing: -0.07em;
+    margin-bottom: 1em;
+}
+
+#Agricultura .list-ag li img {
+    padding-right: 0.5em;
+    height: 1.5em;
+}
+
+#Agricultura .parr-agric {
+    color: #121A1B;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 2.2rem; /* 182.609% */
+    letter-spacing: -0.03594em;
+    padding-left: 5%;
+    padding-top: 1em;
+    padding-right: 5%;
+    text-align: left;
+}
+
+#Agricultura .img-agri {
+    padding-top: 2em;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#Agricultura .certificaciones-unid h3 {
+    color: rgba(18, 26, 27, 0.20);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.05625em;
+    text-align: left;
+    margin-top: 2em;
+    padding-left: 5%;
+}
+
+#Agricultura .cuadro-certificaciones-agricultura {
+    display: none;
+}
+
+.certificaciones-unid .cuadro-certificaciones-agricultura-mb {
+    padding-top: 1em;
+    width: 95%;
+    padding-left: 5%;
+
+}
+
+.sust-div .certificaciones-unid .cuadro-certificaciones-sust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 0.4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 85%;
+    margin: auto;
+}
+
+.sust-div .certificaciones-unid .cuadro-certificaciones-sust li {
+    border-radius: 0.77644rem;
+    border: 0.991px dashed rgba(0, 0, 0, 0.50);
+    background: linear-gradient(180deg, #8CDC65 0%, #6EB54C 100%);
+    padding: 1em;
+    width: auto;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+.sust-div .certificaciones-unid .cuadro-certificaciones-sust a {
+    border-radius: 0.77644rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sust-div .certificaciones-unid .cuadro-certificaciones-sust img {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sust-div .certificaciones-unid .cuadro-certificaciones-sust a img {
+    width: 100%;
+} 
+
+#Agricultura .proyectos-agricultura {
+    margin-top: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#Agricultura .proyectos-agricultura h3 {
+    color: #343434;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.9em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2em;
+    letter-spacing: -0.06em;
+    margin-top: 2em;
+    }
+
+#Agricultura .proyectos-agricultura .proyect-agricultura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+#Agricultura .proyectos-agricultura .proyect-agricultura .proy {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: baseline;
+    flex-shrink: 0;
+    border-radius: 1.72769em;
+    border: 0.921px dashed var(--grey-60, #D0D1D6);    
+    padding: 1.8em 1.3em;
+}
+
+#Agricultura .proyectos-agricultura .proyect-agricultura span {
+    color: #343434;
+    font-family: Inter;
+    font-size: 1.6em;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    text-align: left;
+    padding-bottom: 0.3em;
+}
+
+#Agricultura .proyectos-agricultura .proyect-agricultura .proy p {
+    color: rgba(101, 101, 101, 0.50);
+    font-family: Inter;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+/* Energias */
+#Energias {
+    position: relative;
+}
+
+#Energias h2 {
+    color: #343434;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2em;
+    letter-spacing: -0.06em;
+}
+
+#Energias .list-energ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1.2em;
+}
+
+#Energias .list-energ li {
+    border-radius: 1.29138rem;
+    border: 1.76px solid rgba(25, 25, 25, 0.10);
+    background: #E6E6E6;
+    padding: 1em 0.8em;
+    display: flex;
+    align-items: center;
+    color: #144264;
+    font-family: Inter;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.06325em;
+    width: fit-content;
+    height: 5em;
+}
+
+#Energias .list-energ li:hover {
+    background: #d6d6d6;
+}
+
+#Energias .list-energ li img {
+    padding-right: 0.5em;
+    width: 2em;
+}
+
+#Energias .parr-energ {
+    color: #121A1B;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 2.2rem; /* 182.609% */
+    letter-spacing: -0.03594em;
+    padding-left: 5%;
+    padding-top: 1em;
+    padding-right: 5%;
+    text-align: left;
+}
+
+#Energias .img-energ {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+#Energias .proyectos-energias {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#Energias .proyectos-energias h3 {
+    color: #000;
+    text-align: left;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-top: 2em;
+}
+
+#Energias .proyectos-energias .hidrogeno-verde span {
+    color: #343434e0;
+    font-family: Inter;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 2em; /* 277.145% */
+    letter-spacing: -0.031em;
+    padding-top: 1em;
+    padding-bottom: 0.7em;
+    text-align: left;
+    padding-left: 0.1em;
+}
+
+#Energias .proyectos-energias .hidrogeno-verde p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: left;
+    font-family: Inter;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%; /* 1.8625rem */
+    letter-spacing: -0.025rem;
+    width: 90%;
+}
+
+#Energias .proyectos-energias .hidrogeno-verde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1em;
+    border: 0.4px solid #00000075;  
+    padding: 1em; 
+    margin-top: 2em; 
+}
+
+#Energias .proyectos-energias .hidrogeno-verde .sub-texto {
+    color: rgba(101, 101, 101, 0.60);
+    text-align: left;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em; /* 159.121% */
+    letter-spacing: -0.028em;
+}
+
+#Energias .proyectos-energias .biomassa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1em;
+    border: 0.4px solid #00000075;  
+    padding: 1em; 
+    margin-top: 2em; 
+}
+
+#Energias .proyectos-energias .biomassa span {
+    color: #343434e0;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2em; /* 277.145% */
+    letter-spacing: -0.031em;
+    padding-top: 1em;
+    padding-bottom: 0.7em;
+}
+
+#Energias .proyectos-energias .biomassa p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: left;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%; /* 1.8625rem */
+    letter-spacing: -0.025rem;
+    width: 80%;
+    padding-bottom: 2em;
+}
+
+/* Agtech */
+#Agtech {
+    position: relative;
+}
+
+#Agtech h2 {
+    color: #343434;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2em;
+    letter-spacing: -0.06em;
+}
+
+#Agtech p {
+    color: #121A1B;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 2.2rem; /* 182.609% */
+    letter-spacing: -0.03594em;
+    letter-spacing: -0.03594rem;
+    padding-left: 5%;
+    padding-top: 1em;
+    padding-right: 5%;
+    text-align: left;
+}
+
+#Agtech .img-agt {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#Agtech .botones-ant-sig .inventure {
+    display: none;
+}
+
+#Agtech .inventure-mb {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3%;
+}
+
+
+/**CONTACTO**/
+.hero-contacto {
+    background: url(Assets/contacto-mb.png)top /cover no-repeat;     
+    height: 45em;     
+    overflow: hidden;
+}
+
+.hero-contacto h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 8em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.contacto-form .cont-form {
+    display: block;
+}
+
+.contacto-form .cont-form .text-contact {
+    width: 95%;
+    padding-bottom: 1em;
+    padding-left: 5%;
+}
+
+.contacto-form .cont-form p {
+    font-size: 1.2em;
+    padding-bottom: 1.5em;
+}
+
+.contacto-form .cont-form .button-form-contact {
+    border-radius: 10.50763rem;
+    background: #144264;
+    display: flex;
+    padding: 1em 1.3em;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 70%;
+    overflow: hidden;
+}
+
+.contacto-form .cont-form input {
+    font-size: 0.8em;
+}
+
+.contacto-form .cont-form .button-form-contact:hover {
+    background: #0c283d;
+    overflow: hidden;
+}
+
+.contacto-form .cont-form .button-form-contact i {
+    width: 1em;
+    overflow: hidden;
+    padding-right: 0.2em;
+    padding-top: 0.2em;
+}
+
+.foot-inf {
+    width: 100%;
+    background: #144264;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    border-top: solid 1px #446883;
+}
+
+.foot-inf .gr-fers {
+    display: block;
+}
+
+.foot-inf .gr-fers img {
+    width: 50%;
+}
+
+.foot-inf .gr-fers p {
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    overflow: hidden;
+    text-transform:initial;
+    margin-top: 1em;
+}
+
+}
